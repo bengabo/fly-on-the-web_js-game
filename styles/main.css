@@ -1,0 +1,42 @@
+.mainContainer {
+  position: absolute; 
+  left: 25%; 
+  top: 1%; 
+  max-width: 800px; 
+  width: 98%; 
+  max-height: 720px; 
+  height: 98%; 
+  border: solid 1px red; 
+}
+
+.informationZone {
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 13%; 
+  border: solid 1px blue; 
+}
+
+.gameArea {
+  width: 800px; 
+  height: 600px; 
+  position: absolute; 
+  left: 0; 
+  top: 16%; 
+  z-index: 0; 
+  overflow: hidden; 
+  border: solid 1px green; 
+}
+
+.hero {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 47%;
+  top: 44%;
+  transform-origin: center center;
+  transform: rotate(0deg);
+  pointer-events: none;
+  z-index: 2;
+}
