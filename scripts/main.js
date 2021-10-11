@@ -1,8 +1,8 @@
 $(document).ready(init);
 
 function init() {
-  let gameArea = document.querySelector('.gameArea');
-  gameArea.addEventListener('mousemove', rotateDiv);
+  $('.gameArea').on('mousemove', rotateDiv);
+  $(document).on('click', shoot);
 }
 
 let cartesianToPolar = (x1, y1, x2, y2) => {
