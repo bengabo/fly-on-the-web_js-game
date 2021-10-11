@@ -40,3 +40,15 @@
   pointer-events: none;
   z-index: 2;
 }
+
+.bullet {
+  position: absolute;
+  transform-origin: center center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  border: solid 1px gainsboro;
+  background: black;
+  pointer-events: none;
+  z-index: 1;
+}

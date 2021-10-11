@@ -2,9 +2,10 @@ $(document).ready(init);
 
 function init() {
   $('.gameArea').on('mousemove', rotateDiv);
+  $(document).on('click', shoot);
 }
 
-function cartesianToPolar (x1, y1, x2, y2) {
+let cartesianToPolar = (x1, y1, x2, y2) => {
   let x = x2 - x1;
   let y = y2 - y1;
 
@@ -14,8 +15,7 @@ function cartesianToPolar (x1, y1, x2, y2) {
   };
 }
 
-function polarToCartesian (distance, angle)
-{
+let polarToCartesian = (distance, angle) => {
   return {
     left: distance * Math.cos(angle),
     top: distance * Math.sin(angle)
